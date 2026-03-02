@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 // Added: Tell Prometheus to collect default server metrics (CPU, RAM, etc.)
 client.collectDefaultMetrics();
 
-app.get("/", (req, res) => res.send("Hello DevOps! Version 3.0"));
+app.get("/", (req, res) => res.send("Hello DevOps! Version 4.0"));
 app.get("/health", (req, res) => res.status(200).send("OK")); // For step 8 & 10
 
 // Added: The secret endpoint where Prometheus will scrape the data
